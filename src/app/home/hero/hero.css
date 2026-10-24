@@ -1,0 +1,73 @@
+.hero {
+  padding-block: 3rem 3.5rem;
+  background: linear-gradient(160deg, var(--blue-700), var(--blue-500) 60%, var(--blue-400));
+  color: var(--white);
+}
+
+.hero__inner {
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgb(255 255 255 / 0.15);
+  border-radius: 999px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.lead {
+  max-width: 32ch;
+  margin: 0.75rem auto 2rem;
+  color: var(--blue-100);
+  font-size: 1.05rem;
+}
+
+/* Counter */
+.counter {
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+  max-width: 320px;
+  margin-inline: auto;
+  padding: 1.5rem;
+  background: var(--white);
+  color: var(--blue-900);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgb(10 37 64 / 0.25);
+}
+
+.counter__value {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--blue-600);
+}
+
+.counter__label {
+  color: var(--blue-700);
+  opacity: 0.7;
+}
+
+.counter__actions {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    padding-block: 4.5rem 5rem;
+  }
+}

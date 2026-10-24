@@ -1,20 +1,13 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { Header } from './layout/header/header';
+import { Footer } from './layout/footer/footer';
+import { Hero } from './home/hero/hero';
+import { Features } from './home/features/features';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <main>
-      <h1>Hello, {{ name() }}!</h1>
-      <button (click)="clicks.set(clicks() + 1)">Kliknięto {{ clicks() }} razy</button>
-    </main>
-  `,
-  styles: `
-    main { display: grid; place-items: center; gap: 1rem; min-height: 100vh; }
-    h1 { font-size: 3rem; margin: 0; }
-    button { font: inherit; padding: .5rem 1rem; cursor: pointer; }
-  `,
+  imports: [Header, Footer, Hero, Features],
+  templateUrl: './app.html',
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly name = signal('World');
-  protected readonly clicks = signal(0);
-}
+export class App {}

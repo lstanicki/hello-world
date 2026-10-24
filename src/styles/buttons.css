@@ -1,0 +1,39 @@
+/* Przyciski */
+.btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: var(--blue-600);
+  color: var(--white);
+  border: 0;
+}
+
+.btn--primary:hover {
+  background: var(--blue-700);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--blue-600);
+  border: 2px solid var(--blue-200);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  background: var(--blue-50);
+}

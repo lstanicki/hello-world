@@ -1,0 +1,15 @@
+.footer {
+  padding-block: 1.5rem;
+  background: var(--blue-950);
+  color: var(--blue-200);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: var(--blue-300);
+}
